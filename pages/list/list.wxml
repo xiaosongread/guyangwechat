@@ -1,0 +1,120 @@
+<view class="search box">
+  <view class='input_box radius5 f14' bindtap='search' action="">
+    <input type="text" placeholder="输入关键字" value="{{inputVal}}" bindconfirm='searchFn' bindinput="inputTyping"/>
+  </view>
+  <view class='btn f16' bindtap='search1Fn'>搜索</view>
+</view>
+
+<view class='cons f14'>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+</view>
+
+<view class='tc total'>加载更多...</view>
+<view class='tc total'>没有更多数据</view>

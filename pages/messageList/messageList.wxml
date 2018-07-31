@@ -1,0 +1,21 @@
+<view class="search box">
+  <view class='btn f16' bindtap='goSubmitMessage'>我要留言</view>
+</view>
+
+<view class='cons f14'>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+  <view class='cons_li box'>
+    <view class='title ellipsis'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
+    <view class='date'>2018-09-09</view>
+  </view>
+</view>
+
+<view class='tc total'>加载更多...</view>
+<view class='tc total'>没有更多数据</view>

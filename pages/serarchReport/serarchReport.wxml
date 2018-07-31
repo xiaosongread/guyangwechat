@@ -1,0 +1,9 @@
+<!--pages/card/card.wxml-->
+<view class='card_box'>
+  <view class='card'>
+    <input type='text' placeholder='请输入查询码' class='f14'></input>
+  </view>
+  <view class='search tc radius5 f16'>查 询</view>
+  <view class='report_result_tit'>查询结果：</view>
+  <view class='report_result'></view>
+</view>

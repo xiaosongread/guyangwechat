@@ -1,0 +1,46 @@
+<view class="banner pr tc">
+    <image class="pic" src="{{data.cover_img}}" mode="aspectFill"></image>
+    <text class="title pa ellipsis">{{data.subject}}</text>
+    <text class="tag pa">{{data.type_name}} | {{data.style_name}} | {{data.area}}平米 | {{data.price_name}}</text>
+    <button bindtap="addLike" class="sc pa" plain="true" type="warn" size="mini">收藏</button>
+</view>
+<view class="sjs_bar mt35 bg_f border_t border_b">
+    <view class="w pr">
+        <image class="pic" src="{{data.designer_face}}" bindtap="goToDesigner"></image>
+        <text class="name pa" bindtap="goToDesigner">{{data.designer_name}}</text>
+        <text class="des pa" bindtap="goToDesigner">主任设计师</text>
+        <!-- <button type="warn" size="mini" plain class="btn pa" bindtap="addLike">收藏</button> -->
+        <contact-button class="pa" type="default-dark" size="27" session-from="{{data.id}}"></contact-button>
+    </view>
+</view>
+<view class="detaile bg_f mt35 border_t border_b">
+    <view class="linian w">
+        <title>设计理念：</title>
+        <text>{{data.description}}</text>
+    </view>
+    <view class="content w mt40 border_t">
+        <view wx:for="{{data.photo_list}}" wx:key="" bindtap="previewImage" data-index="{{index}}">
+            <image src="{{item.photo_url_m}}" mode="aspectFill"></image>
+            <text>{{item.photo_des}}</text>
+        </view>
+    </view>
+    <view class="favorite">
+        <view class="btn_box">
+            <view class="btn {{isLike?'on':''}}" bindtap="addLike">
+                <view class="icon"></view>
+                <text>收藏</text>
+            </view>
+            <view class="count" wx:if="{{f_count}}">已有<text>{{f_count}}</text>人收藏</view>
+        </view>
+        <view class="head_list" wx:if="{{f_count}}">
+            <block wx:for="{{f_data}}" wx:key="{{item.user_base_id}}">
+                <image data-id="{{item.user_base_id}}" data-src="{{item.avatar}}" data-name="{{item.nickname}}" class="pic" src="{{item.avatar}}" bindtap="goTaPage"></image>
+            </block>
+        </view>
+        <view class="tc" hidden="{{f_more_hide}}" wx:if="{{f_count>10}}">
+            <button bindtap="getFavorite" class="more" plain="true" loading="{{f_btn_loading}}" type="warn" size="mini">更多收藏者 </button>
+        </view>
+    </view>
+</view>
+<include src="/template/footer.wxml"/>
+<navigator wx:if="{{homeBtn}}" url="/pages/case/list/list" open-type="switchTab" class="homeBtn"></navigator>

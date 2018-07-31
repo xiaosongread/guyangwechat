@@ -1,0 +1,30 @@
+/* pages/card/card.wxss */
+.card_box{
+  padding: 15px;
+}
+.card_box .card{
+  height: 80rpx;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+}
+.card_box .card input{
+  height: 80rpx;
+}
+.card_box .search{
+  line-height: 80rpx;
+  background: #fe3a35;
+  margin-top: 15px;
+  color: #fff;
+}
+.report_result_tit{
+  margin: 10px 0 0;
+}
+.report_result{
+  /* width: 100%; */
+  display: block;
+  height: 160rpx;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+}
+
+

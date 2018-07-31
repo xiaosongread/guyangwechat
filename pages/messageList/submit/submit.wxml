@@ -1,0 +1,17 @@
+<!--pages/messageList/submit/submit.wxml-->
+<view class='subbox'>
+  <view class='input_box name f14'>
+    <input type='text' placeholder='请输入姓名'></input>
+  </view>
+  <view class='input_box phone f14'>
+    <input type='text' placeholder='请输入电话号码'></input>
+  </view>
+  <view class='input_box title f14'>
+    <input type='text' placeholder='请输入标题'></input>
+  </view>
+  <view class='input_box cons f14'>
+    <textarea auto-height placeholder="描述控制在500字以内" />
+  </view>
+  <view class='btn f16 radius5 tc' bindtap='submit'>提 交</view>
+</view>
+

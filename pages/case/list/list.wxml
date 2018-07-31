@@ -1,0 +1,77 @@
+<!--选项卡-->
+<view class="tabTit box tc bg_f">
+    <view class="flex1{{!tab[index]?' active':''}}" wx:for="{{tabTxt}}" wx:key="" data-index="{{index}}" bindtap="filterTab">
+        <text>{{item}}</text>
+        <image src="/images/arrow.png"></image>
+    </view>
+</view>
+
+<!--筛选项-->
+<view class="tabLayer tc" hidden="{{tab[0]}}">
+    <text class="{{house_type==0?'active':''}}" data-id="0" data-index="0" data-txt="户型" bindtap="filter">不限</text>
+    <text class="{{house_type==item.id?'active':''}}" wx:for="{{filterList.housetype_list}}" wx:key="" data-id="{{item.id}}" data-index="0" data-txt="{{item.name}}" bindtap="filter">{{item.name}}</text>
+</view>
+<view class="tabLayer tc" hidden="{{tab[1]}}">
+    <text class="{{house_style==0?'active':''}}" data-id="0" data-index="1" data-txt="风格" bindtap="filter">不限</text>
+    <text class="{{house_style==item.id?'active':''}}" wx:for="{{filterList.style_list}}" wx:key="" data-id="{{item.id}}" data-index="1" data-txt="{{item.name}}" bindtap="filter">{{item.name}}</text>
+</view>
+<view class="tabLayer tc" hidden="{{tab[2]}}">
+    <text class="{{house_area==0?'active':''}}" data-id="0" data-index="2" data-txt="面积" bindtap="filter">不限</text>
+    <text class="{{house_area==item.id?'active':''}}" wx:for="{{filterList.area_list}}" wx:key="" data-id="{{item.id}}" data-index="2" data-txt="{{item.name}}" bindtap="filter">{{item.name}}</text>
+</view>
+
+<!-- 搜索条 -->
+<view class="page">
+    <view class="page__bd">
+        <view class="weui-search-bar">
+            <view class="weui-search-bar__form">
+                <view class="weui-search-bar__box">
+                    <input type="text" class="weui-search-bar__input" placeholder="搜索" />
+                </view>
+                <label class="weui-search-bar__label" bindtap="search">
+                    <icon class="weui-icon-search" type="search" size="14"></icon>
+                    <view class="weui-search-bar__text">搜索</view>
+                </label>
+            </view>
+        </view>
+    </view>
+</view>
+
+<!--结果-->
+<view class="w">
+    <view wx:for="{{data}}" wx:key="" wx:key="id" class="case pr">
+        <image class="pic" src="{{item.cover_img}}" mode="aspectFill" data-gid="{{item.id}}" bindtap="goToDetaile"></image>
+        <view class="favorite">
+            <text class="pic_num">{{item.img_nums}}</text>
+            <text class="top_num">{{item.fav_nums}}</text>
+        </view>
+        <view class="title ellipsis">{{item.subject}}</view>
+        <view class="tag ellipsis">
+            {{item.type_name}} | {{item.area_name}} | {{item.house_price}}
+        </view>
+        <view class="headPic pa" bindtap="goToDesigner" data-did="{{item.designerid}}">
+            <image src="{{item.designer_face}}"></image>
+            <text class="ellipsis tc">{{item.designer_name}}</text>
+        </view>
+    </view>
+
+    <view class="page__bd" hidden="{{!dataNull}}">
+        <view class="weui-loadmore" data-aa="{{page_count+'--'+page}}" hidden="{{page_count==page}}">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+        <view class="weui-loadmore weui-loadmore_line" wx:if="{{page_count==page}}">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">已加载全部数据</view>
+        </view>
+    </view>
+
+    <!--无数据提示-->
+    <view class="null tc" hidden="{{dataNull}}">
+        <icon type="clear" size="100" color="#ccc"/>
+        <view class="txt1">当前筛选无结果</view>
+        <view class="txt2">您可以尝试筛选其他分类看看</view>
+    </view>
+</view>
+
+<!--底部-->
+<include src="/template/footer.wxml"/>

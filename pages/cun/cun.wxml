@@ -1,0 +1,34 @@
+<!--pages/index/index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='title box column'>
+  <view class='elesh f12'>Public Section</view>
+  <view class='f16 bold'>公 开 栏 目</view>
+</view>
+<view class='column_box box f16'>
+  <view class='flex1 tcenter col_btn color1' bindtap='goList'>
+    <view>党务公开</view>
+    <image src='../../images/11.png' class='icon'></image>
+  </view>
+  <view class='flex1 tcenter col_btn color2'>
+    <view>村务公开</view>
+    <image src='../../images/11.png' class='icon'></image>
+  </view>
+</view>
+<view class='column_box box f16'>
+  <view class='flex1 tcenter col_btn color3'>
+    <view>财务公开</view>
+    <image src='../../images/11.png' class='icon'></image>
+  </view>
+  <view class='flex1 tcenter col_btn color4'>
+    <view>在线留言</view>
+    <image src='../../images/11.png' class='icon'></image>
+  </view>
+</view>

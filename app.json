@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/village/village",
+    "pages/cun/cun",
+    "pages/card/card",
+    "pages/list/list",
+    "pages/messageList/messageList",
+    "pages/messageList/submit/submit",
+    "pages/case/list/list",
+    "pages/case/detaile/detaile",
+    "pages/report/report",
+    "pages/serarchReport/serarchReport"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fe3a35",
+    "navigationBarTitleText": "政府小程序",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "color": "#fff",
+    "selectedColor": "#fe3a35",
+    "backgroundColor": "#000",
+    "list": [
+      {
+        "text": "三务公开",
+        "pagePath": "pages/index/index",
+        "iconPath": "images/index_1.png",
+        "selectedIconPath": "images/index_0.png"
+      },
+      {
+        "text": "在线举报",
+        "pagePath": "pages/report/report",
+        "iconPath": "images/jubao_1.png",
+        "selectedIconPath": "images/jubao_0.png"
+      },
+      {
+        "text": "查询",
+        "pagePath": "pages/card/card",
+        "iconPath": "images/chaxun_1.png",
+        "selectedIconPath": "images/chaxun_0.png"
+      }
+    ]
+  }
+}

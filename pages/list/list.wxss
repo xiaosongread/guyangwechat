@@ -1,0 +1,43 @@
+/* pages/list/list.wxss */
+.search{
+  height: 60rpx;
+  padding: 10px 15px;
+  overflow: hidden;
+}
+.search .input_box{
+  display: block;
+  flex: 5;
+  height: 60rpx;
+  padding: 0 15px;
+  border: 1px solid #ddd;
+}
+.search input{
+  width: 250px;
+  height: 100%;
+  display: block;
+}
+.search .btn{
+  flex: 5;
+  height: 100%;
+  line-height: 60rpx;
+  text-align: center;
+  display: block;
+}
+
+.cons{
+  padding: 15px;
+}
+.cons .cons_li{
+  margin-bottom: 10px;
+}
+.cons .cons_li .title{
+  flex: 5;
+  padding-right: 30px; 
+}
+.cons .cons_li .date{
+  flex: 2;
+}
+
+.total{
+  color: rgb(117, 117, 117);
+}

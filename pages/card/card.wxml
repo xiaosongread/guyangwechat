@@ -1,0 +1,8 @@
+<!--pages/card/card.wxml-->
+<view class='card_box'>
+  <view class='card'>
+    <input type='idcard' placeholder='请输入身份证号' class='f14'></input>
+  </view>
+  <view class='search tc radius5 f16'>查 询</view>
+  
+</view>

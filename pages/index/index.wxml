@@ -1,0 +1,145 @@
+<!--pages/index/index.wxml-->
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" >
+  <block wx:for="{{imgUrls}}">
+    <swiper-item style='width: 100%;overflow-x: hidden;'>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='title box column'>
+  <view class='elesh f12'>Selection Column</view>
+  <view class='f16 bold'>选 择 栏 目</view>
+</view>
+<view class='column_box box'>
+  <view class='flex1 tcenter col_btn color1'>
+    <view>党务公开</view>
+    <image src='../../images/dw.png' class='icon'></image>
+  </view>
+  <view class='flex1 tcenter col_btn color2'>
+    <view>政务公开</view>
+    <image src='../../images/zw.png' class='icon'></image>
+  </view>
+  <view class='flex1 tcenter col_btn color3'>
+    <view>村务公开</view>
+    <image src='../../images/cunw.png' class='icon'></image>
+  </view>
+  <view class='flex1 tcenter col_btn color4'>
+    <view>财务公开</view>
+    <image src='../../images/cw.png' class='icon'></image>
+  </view>
+</view>
+
+<view class='title box column'>
+  <view class='elesh f12'>Selection Classifcation</view>
+  <view class='f16 bold'>选 择 镇 街道</view>
+</view>
+<view class='classif_box'>
+  <view class='classif_box_1'>
+    <view class='classif_box_item classif_box_three color5 radius5' bindtap="goVillage">
+      <view class='a box center column'>
+        <image src='../../images/home.png' class='iconbig'></image>
+        <view>金正镇</view>
+      </view>
+    </view>
+    <view class='classif_box_item classif_box_three color5 radius5'>
+      <view class='a box center column'>
+        <image src='../../images/home.png' class='iconbig'></image>
+        <view>金正镇</view>
+      </view>
+    </view>
+    <view class='classif_box_item classif_box_three color5 radius5'>
+      <view class='a box center column'>
+        <image src='../../images/home.png' class='iconbig'></image>
+        <view>金正镇</view>
+      </view>
+    </view>
+    <view class='classif_box_item classif_box_two color5 radius5'>
+      <view class='a box center column'>
+        <image src='../../images/home.png' class='iconbig'></image>
+        <view>金正镇</view>
+      </view>
+    </view>
+    <view class='classif_box_item classif_box_two color5 radius5'>
+      <view class='a box center column'>
+        <image src='../../images/home.png' class='iconbig'></image>
+        <view>金正镇</view>
+      </view>
+    </view>
+    <view class='classif_box_item classif_box_one color5 radius5'>
+      <view class='a box center column'>
+        <image src='../../images/home.png' class='iconbig'></image>
+        <view>金正镇</view>
+      </view>
+    </view>
+  </view>
+  
+</view>
+
+<view class='title box column'>
+  <view class='elesh f12'>Selection Classifcation</view>
+  <view class='f16 bold'>选 择 单 位</view>
+</view>
+<view class='danwei_box'>
+  <view class='danwei_item color5 radius5' bindtap='goUnit'>
+    <view class='danwei_item_box box center column'>
+      <image src='../../images/bumen.png' class='icon'></image>
+      <view>安监局</view>
+    </view>
+  </view>
+  <view class='danwei_item color5 radius5'>
+    <view class='danwei_item_box box center column'>
+      <image src='../../images/home.png' class='icon'></image>
+      <view>安监局</view>
+    </view>
+  </view>
+  <view class='danwei_item color5 radius5'>
+    <view class='danwei_item_box box center column'>
+      <image src='../../images/home.png' class='icon'></image>
+      <view>安监局</view>
+    </view>
+  </view>
+  <view class='danwei_item color5 radius5'>
+    <view class='danwei_item_box box center column'>
+      <image src='../../images/home.png' class='icon'></image>
+      <view>安监局</view>
+    </view>
+  </view>
+  <view class='danwei_item color5 radius5'>
+    <view class='danwei_item_box box center column'>
+      <image src='../../images/home.png' class='icon'></image>
+      <view>安监局</view>
+    </view>
+  </view>
+  <view class='danwei_item color5 radius5'>
+    <view class='danwei_item_box box center column'>
+      <image src='../../images/home.png' class='icon'></image>
+      <view>安监局</view>
+    </view>
+  </view>
+  <view class='danwei_item color5 radius5'>
+    <view class='danwei_item_box box center column'>
+      <image src='../../images/home.png' class='icon'></image>
+      <view>安监局</view>
+    </view>
+  </view>
+  <view class='danwei_item color5 radius5'>
+    <view class='danwei_item_box box center column'>
+      <image src='../../images/home.png' class='icon'></image>
+      <view>安监局</view>
+    </view>
+  </view>
+  <view class='danwei_item color5 radius5'>
+    <view class='danwei_item_box box center column'>
+      <image src='../../images/home.png' class='icon'></image>
+      <view>安监局</view>
+    </view>
+  </view>
+  <view class='danwei_item color5 radius5'>
+    <view class='danwei_item_box box center column'>
+      <image src='../../images/home.png' class='icon'></image>
+      <view>安监局</view>
+    </view>
+  </view>
+</view>
