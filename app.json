@@ -7,15 +7,14 @@
     "pages/list/list",
     "pages/messageList/messageList",
     "pages/messageList/submit/submit",
-    "pages/case/list/list",
-    "pages/case/detaile/detaile",
     "pages/report/report",
-    "pages/serarchReport/serarchReport"
+    "pages/serarchReport/serarchReport",
+    "pages/list/info/info"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fe3a35",
-    "navigationBarTitleText": "政府小程序",
+    "navigationBarTitleText": "化德纪委监委",
     "navigationBarTextStyle": "#fff"
   },
   "tabBar": {

@@ -1,9 +1,9 @@
 <!--pages/index/index.wxml-->
 <swiper indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgUrls}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      <image src="../../images/1.jpg" class="slide-image" width="355" height="150"/>
     </swiper-item>
   </block>
 </swiper>
@@ -13,22 +13,22 @@
   <view class='f16 bold'>公 开 栏 目</view>
 </view>
 <view class='column_box box f16'>
-  <view class='flex1 tcenter col_btn color1' bindtap='goList'>
+  <view class='flex1 tcenter col_btn color1' bindtap='goList' data-category="1">
     <view>党务公开</view>
     <image src='../../images/11.png' class='icon'></image>
   </view>
-  <view class='flex1 tcenter col_btn color2'>
+  <view class='flex1 tcenter col_btn color2' bindtap='goList' data-category="2">
     <view>村务公开</view>
     <image src='../../images/11.png' class='icon'></image>
   </view>
 </view>
 <view class='column_box box f16'>
-  <view class='flex1 tcenter col_btn color3'>
+  <view class='flex1 tcenter col_btn color3' bindtap='goList' data-category="3">
     <view>财务公开</view>
     <image src='../../images/11.png' class='icon'></image>
   </view>
-  <view class='flex1 tcenter col_btn color4'>
+  <view class='flex1 tcenter col_btn color4' bindtap='goMessage'>
     <view>在线留言</view>
-    <image src='../../images/11.png' class='icon'></image>
+    <image src='../../images/11.png' class='icon' bindtap='goList'></image>
   </view>
 </view>

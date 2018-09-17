@@ -17,5 +17,5 @@
   </view>
 </view>
 
-<view class='tc total'>加载更多...</view>
+<!-- <view class='tc total'>加载更多...</view> -->
 <view class='tc total'>没有更多数据</view>

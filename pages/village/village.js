@@ -1,4 +1,6 @@
 // pages/index/index.js
+var app = getApp();
+var _self;
 Page({
 
   /**
@@ -13,25 +15,61 @@ Page({
     autoplay: true,
     circular: true,
     interval: 5000,
-    duration: 1000
+    duration: 1000,
+
+    twonId:"",
+    cunList:[],
+    // orgId:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    _self = this;
+    console.log('镇id', options)
+    this.setData({
+      twonId: options.twonid,
+      // orgId: options.twonid
+    })
+    this.getCun()
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function () {
-  
+  onReady: function (options) {
+    
   },
-  gocun: function() {
+  getCun:function (){
+    wx.request({
+      url: app.api.cun,
+      method: 'get',
+      data:{
+        cityId: _self.data.twonId
+      },
+      success: function (res) {
+        var data = JSON.parse(res.data)
+        console.log(data)
+        _self.setData({
+          townList: data.resultdata
+        })
+      },
+      complete: function () {
+        wx.hideToast();
+      }
+    })
+  },
+  goList: function(e) {
     wx.navigateTo({
-      url: '../cun/cun'
+      url: '../list/list?category=' + e.currentTarget.dataset.category + '&orgId=' + _self.data.twonId
+    })
+  },
+  gocun: function(e) {
+    console.log('ll', e)
+    console.log('../cun/cun?orgId=' + e.currentTarget.dataset.orgId)
+    wx.navigateTo({
+      url: '../cun/cun?orgId=' + e.currentTarget.dataset.orgid
     })
   },
   goMessage: function() {

@@ -1,27 +1,62 @@
 // pages/list/list.js
+var app = getApp();
+var _self;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    inputVal:''
+    inputVal:'',
+    category:'',
+    orgId:''
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    console.log("22", options)
+    this.setData({
+      category: options.category,
+      orgId: options.orgId
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    _self = this;
+    this.getData();
   },
-
+  getData: function () {
+    wx.request({
+      url: app.api.list,
+      method: 'get',
+      data: {
+        orgId: _self.data.orgId,
+        category: _self.data.category,
+        pageindex:1,
+        pagesize:10,
+        keywords:''
+      },
+      success: function (res) {
+        console.log("res",JSON.parse(res.data))
+      },
+      complete: function () {
+        wx.hideToast();
+        wx.stopPullDownRefresh() //停止下拉刷新
+      }
+    })
+  },
+  goInfo: function () {
+    var url = 'https://www.baidu.com'
+    wx.navigateTo({
+      url: './info/info?url='+url
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

@@ -1,4 +1,6 @@
 // pages/index/index.js
+var app = getApp();
+var _self;
 Page({
 
   /**
@@ -13,14 +15,21 @@ Page({
     autoplay: true,
     circular: true,
     interval: 5000,
-    duration: 1000
+    duration: 1000,
+
+    category:"",
+    orgId:''
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    _self = this;
+    console.log('pppp', options)
+    this.setData({
+      orgId: options.orgId
+    })
   },
 
   /**
@@ -29,10 +38,17 @@ Page({
   onReady: function () {
   
   },
-  goList: function () {
-    console.log("????")
+  goList: function (e) {
+    this.setData({
+      category: e.currentTarget.dataset.category
+    })
     wx.navigateTo({
-      url: '../list/list'
+      url: '../list/list?category=' + _self.data.category + '&orgId=' + _self.data.orgId
+    })
+  },
+  goMessage: function () {
+    wx.navigateTo({
+      url: '../messageList/messageList'
     })
   },
   /**

@@ -1,7 +1,7 @@
 <!--pages/report/report.wxml-->
 <view class='nav box'>
   <view class='f14'>网上举报须知</view>
-  <view class='f14' bindtap='search'>举报查询</view>
+  <view class='f14'>举报查询</view><!--bindtap='search'-->
 </view>
 
 <view class='banner'>

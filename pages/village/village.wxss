@@ -27,6 +27,7 @@ image{
 }
 
 .danwei_box{
+  font-size: 24rpx;
   overflow: hidden;
   margin: 10px 15px;
   color: #fff;
@@ -50,4 +51,16 @@ image{
 }
 .danwei_box .danwei_item .danwei_item_box view{
   margin-top: 5px
+}
+
+.noData{
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.noData image{
+  width: 100px;
+  height: 100px;
 }

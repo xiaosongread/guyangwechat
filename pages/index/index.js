@@ -1,4 +1,6 @@
 // pages/index/index.js
+var app = getApp();
+var _self;
 Page({
 
   /**
@@ -13,37 +15,76 @@ Page({
     autoplay: true,
     circular: true,
     interval: 5000,
-    duration: 1000
+    duration: 1000,
+
+
+    townList: [],
+    unitList:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    _self = this;
+    this.getTown();
+    this.getUnit();
   },
-
+  getTown: function () {
+    wx.request({
+      url: app.api.town,
+      method: 'get',
+      success: function (res) {
+        var data = JSON.parse(res.data)
+        console.log(data)
+        _self.setData({
+          townList: data.resultdata
+        })
+      },
+      complete: function () {
+        wx.hideToast();
+        wx.stopPullDownRefresh() //停止下拉刷新
+      }
+    })
+  },
+  getUnit: function () {
+    wx.request({
+      url: app.api.unit,
+      method: 'get',
+      success: function (res) {
+        var data = JSON.parse(res.data)
+        _self.setData({
+          unitList: data.resultdata
+        })
+      },
+      complete: function () {
+        wx.hideToast();
+        wx.stopPullDownRefresh() //停止下拉刷新
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
   
   },
-  goVillage: function () {
+  goVillage: function (e) {
     wx.navigateTo({
-      url: '../village/village'
+      url: '../village/village?twonid=' + e.currentTarget.dataset.twonid
     })
   },
-  goUnit: function () {
+  goUnit: function (e) {
+    console.log(e)
     wx.navigateTo({
-      url: '../messageList/messageList'
+      url: '../cun/cun?orgId=' + e.currentTarget.dataset.id
     })
   },
   /**

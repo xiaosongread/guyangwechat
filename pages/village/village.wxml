@@ -1,9 +1,9 @@
 <!--pages/index/index.wxml-->
 <swiper indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-  <block wx:for="{{imgUrls}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+      <image src="../../images/1.jpg" class="slide-image" width="355" height="150"/>
     </swiper-item>
   </block>
 </swiper>
@@ -13,15 +13,15 @@
   <view class='f16 bold'>选 择 栏 目</view>
 </view>
 <view class='column_box box'>
-  <view class='flex1 tcenter col_btn color1'>
+  <view class='flex1 tcenter col_btn color1' bindtap='goList' data-category="1">
     <view>党务公开</view>
     <image src='../../images/11.png' class='icon'></image>
   </view>
-  <view class='flex1 tcenter col_btn color2'>
+  <view class='flex1 tcenter col_btn color2' bindtap='goList' data-category="2">
     <view>政务公开</view>
     <image src='../../images/11.png' class='icon'></image>
   </view>
-  <view class='flex1 tcenter col_btn color3'>
+  <view class='flex1 tcenter col_btn color3' bindtap='goList' data-category="3">
     <view>财务公开</view>
     <image src='../../images/11.png' class='icon'></image>
   </view>
@@ -36,65 +36,17 @@
   <view class='f16 bold'>选 择 村 社区</view>
 </view>
 
-<view class='danwei_box f14'>
-  <view class='danwei_item color5 radius5' bindtap='gocun'>
-    <view class='danwei_item_box box center column'>
-      <image src='../../images/home.png' class='icon'></image>
-      <view>安监局</view>
+<view class='danwei_box' wx:if="{{townList.length}}">
+  <block wx:for="{{townList}}" wx:key="{{index}}">
+    <view class='danwei_item color5 radius5' bindtap='gocun' data-orgId="{{item.OrganizeId}}">
+      <view class='danwei_item_box box center column'>
+        <image src='../../images/home.png' class='icon'></image>
+        <view>{{item.FullName}}</view>
+      </view>
     </view>
-  </view>
-  <view class='danwei_item color5 radius5'>
-    <view class='danwei_item_box box center column'>
-      <image src='../../images/home.png' class='icon'></image>
-      <view>安监局</view>
-    </view>
-  </view>
-  <view class='danwei_item color5 radius5'>
-    <view class='danwei_item_box box center column'>
-      <image src='../../images/home.png' class='icon'></image>
-      <view>安监局</view>
-    </view>
-  </view>
-  <view class='danwei_item color5 radius5'>
-    <view class='danwei_item_box box center column'>
-      <image src='../../images/home.png' class='icon'></image>
-      <view>安监局</view>
-    </view>
-  </view>
-  <view class='danwei_item color5 radius5'>
-    <view class='danwei_item_box box center column'>
-      <image src='../../images/home.png' class='icon'></image>
-      <view>安监局</view>
-    </view>
-  </view>
-  <view class='danwei_item color5 radius5'>
-    <view class='danwei_item_box box center column'>
-      <image src='../../images/home.png' class='icon'></image>
-      <view>安监局</view>
-    </view>
-  </view>
-  <view class='danwei_item color5 radius5'>
-    <view class='danwei_item_box box center column'>
-      <image src='../../images/home.png' class='icon'></image>
-      <view>安监局</view>
-    </view>
-  </view>
-  <view class='danwei_item color5 radius5'>
-    <view class='danwei_item_box box center column'>
-      <image src='../../images/home.png' class='icon'></image>
-      <view>安监局</view>
-    </view>
-  </view>
-  <view class='danwei_item color5 radius5'>
-    <view class='danwei_item_box box center column'>
-      <image src='../../images/home.png' class='icon'></image>
-      <view>安监局</view>
-    </view>
-  </view>
-  <view class='danwei_item color5 radius5'>
-    <view class='danwei_item_box box center column'>
-      <image src='../../images/home.png' class='icon'></image>
-      <view>安监局</view>
-    </view>
-  </view>
+  </block>
+</view>
+<view class='noData' wx:else>
+  <image src='../../images/nodata.png'></image>
+  <view>暂无数据</view>
 </view>
