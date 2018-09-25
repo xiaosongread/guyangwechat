@@ -77,6 +77,7 @@ Page({
   
   },
   goVillage: function (e) {
+    console.log("123123", e, e.currentTarget.dataset)
     wx.navigateTo({
       url: '../village/village?twonid=' + e.currentTarget.dataset.twonid
     })

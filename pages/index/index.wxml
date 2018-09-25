@@ -46,7 +46,7 @@
           </view> 
       </block>  
       <block wx:for="{{townList}}" wx:key="{{index}}" wx:if="{{townList.length%3==2}}">
-          <view class="{{townList.length-1 != index && townList.length-2 != index ? 'classif_box_three' : 'classif_box_two'}} classif_box_item color5 radius5" bindtap="goVillage">
+          <view class="{{townList.length-1 != index && townList.length-2 != index ? 'classif_box_three' : 'classif_box_two'}} classif_box_item color5 radius5" bindtap="goVillage" data-twonid="{{item.OrganizeId}}">
             <view class='a box center column'>
               <image src='../../images/home.png' class='iconbig'></image>
               <view>{{item.FullName}}</view>
@@ -54,7 +54,7 @@
           </view> 
       </block>  
       <block wx:for="{{townList}}" wx:key="{{index}}" wx:if="{{townList.length%3==0}}">
-          <view class='classif_box_three classif_box_item color5 radius5' bindtap="goVillage">
+          <view class='classif_box_three classif_box_item color5 radius5' bindtap="goVillage" data-twonid="{{item.OrganizeId}}">
             <view class='a box center column'>
               <image src='../../images/home.png' class='iconbig'></image>
               <view>{{item.FullName}}</view>

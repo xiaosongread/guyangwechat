@@ -3,13 +3,15 @@
     "pages/index/index",
     "pages/village/village",
     "pages/cun/cun",
-    "pages/card/card",
     "pages/list/list",
     "pages/messageList/messageList",
     "pages/messageList/submit/submit",
     "pages/report/report",
     "pages/serarchReport/serarchReport",
-    "pages/list/info/info"
+    "pages/list/info/info",
+    "pages/card/subsidy/subsidy",
+    "pages/card/card"
+    
   ],
   "window": {
     "backgroundTextStyle": "dark",

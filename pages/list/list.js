@@ -9,7 +9,8 @@ Page({
   data: {
     inputVal:'',
     category:'',
-    orgId:''
+    orgId:'',
+    listData:[]
 
   },
 
@@ -31,7 +32,7 @@ Page({
     _self = this;
     this.getData();
   },
-  getData: function () {
+  getData: function (keyWord) {
     wx.request({
       url: app.api.list,
       method: 'get',
@@ -40,10 +41,13 @@ Page({
         category: _self.data.category,
         pageindex:1,
         pagesize:10,
-        keywords:''
+        keyWords: keyWord || ''
       },
       success: function (res) {
         console.log("res",JSON.parse(res.data))
+        _self.setData({
+          listData: JSON.parse(res.data).resultdata.rows
+        })
       },
       complete: function () {
         wx.hideToast();
@@ -51,10 +55,20 @@ Page({
       }
     })
   },
-  goInfo: function () {
-    var url = 'https://www.baidu.com'
-    wx.navigateTo({
-      url: './info/info?url='+url
+  goInfo: function (e) {
+    wx.request({
+      url: app.api.listInfo + e.currentTarget.dataset.id,
+      method: 'get',
+      success: function (res) {
+        var url = 'http://39.106.121.203:8031/' + JSON.parse(res.data).resultdata;
+        wx.navigateTo({
+          url: './info/info?url='+url
+        })
+      },
+      complete: function () {
+        wx.hideToast();
+        wx.stopPullDownRefresh() //停止下拉刷新
+      }
     })
   },
   /**
@@ -86,6 +100,7 @@ Page({
   },
   searchFn: function () {
     console.log("搜索事件", this.data.searchKeyWord)
+    this.getData(this.data.inputVal);
   },
   inputTyping: function (e) {
     this.setData({
@@ -94,6 +109,7 @@ Page({
   },
   search1Fn: function (e) {
     console.log("搜索事件", this.data.inputVal,e)
+    this.getData(this.data.inputVal);
   },
   /**
    * 页面上拉触底事件的处理函数

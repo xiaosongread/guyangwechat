@@ -1,8 +1,8 @@
 <!--pages/report/report.wxml-->
-<view class='nav box'>
+<!-- <view class='nav box'>
   <view class='f14'>网上举报须知</view>
-  <view class='f14'>举报查询</view><!--bindtap='search'-->
-</view>
+  <view class='f14'>举报查询</view>
+</view> -->
 
 <view class='banner'>
   <image src='../../images/banner6.jpg'></image>
@@ -22,8 +22,8 @@
   <view>四、纪检监察机关提倡实名举报（请填写真实姓名、身份证号和准确联系方式等内容）。</view>
 
   <view class='box btn_box jcenter'>
-    <view class='btn'>署名举报</view>
-    <view class='btn'>匿名举报</view>
+    <view class='btn' bindtap='clickOne'>署名举报</view>
+    <view class='btn' bindtap='clickTwo'>匿名举报</view>
   </view>
 </view>
 

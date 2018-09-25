@@ -40,6 +40,18 @@ Page({
       url: '../serarchReport/serarchReport',
     })
   },
+  clickOne: function(){
+    var url = 'http://neimeng.12388.gov.cn/wlcbs/huadexian/';
+    wx.navigateTo({
+      url: '../list/info/info?url=' + url
+    })
+  },
+  clickTwo: function(){
+    var url = 'http://neimeng.12388.gov.cn/wlcbs/huadexian/';
+    wx.navigateTo({
+      url: '../list/info/info?url=' + url
+    })
+  },
   /**
    * 生命周期函数--监听页面卸载
    */

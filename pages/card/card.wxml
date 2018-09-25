@@ -1,8 +1,37 @@
 <!--pages/card/card.wxml-->
-<view class='card_box'>
+<!-- <view class='card_box'>
   <view class='card'>
     <input type='idcard' placeholder='请输入身份证号' class='f14'></input>
   </view>
   <view class='search tc radius5 f16'>查 询</view>
   
+</view> -->
+
+<view class='card'>
+  <view class='bg'></view>
+  <view class='card_posi'>
+    <text class='tit'>化德县惠农补贴查询</text>
+    <view class='card_des'>
+      <view>为贯彻国家、自治区、市级政务服务要求，在各级纪检检察机关对”一卡通“公开公示工作的高度重视下，化德县人民政府现推出”惠农补贴查询“微信小程序，化德县广大农牧民足不出户即可查询最近几年的优惠补贴信息及补贴政策。</view>
+      <view>2018年8月份光伏工程款、优抚、退役军人等，请用微信小程序查询。</view>
+      <view>如有疑问请联系各乡镇一卡通专管员！</view>
+    </view>
+
+    <view class='card_form'>
+      <view class='box card_form_li'>
+        <image src='../../images/card.png' class='icon'></image>
+        <text>身份证</text>
+        <input type='idcard' placeholder='请输入身份证号码' class='f16 input'></input>
+      </view>
+      <view class='box card_form_li'>
+        <image src='../../images/pass.png' class='icon'></image>
+        <text>密 码</text>
+        <input type='idcard' placeholder='请输入密码' class='f16 input'></input>
+      </view>
+    </view>
+
+    <view class='f16 login radius5' bindtap='goSubsidy'>登 陆</view>
+
+    <view class='forgetPass'>忘记密码</view>
+  </view>
 </view>

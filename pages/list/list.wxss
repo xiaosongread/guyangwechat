@@ -35,7 +35,7 @@
   padding-right: 30px; 
 }
 .cons .cons_li .date{
-  flex: 2;
+  /* flex: 3; */
 }
 
 .total{

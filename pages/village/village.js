@@ -67,7 +67,7 @@ Page({
   },
   gocun: function(e) {
     console.log('ll', e)
-    console.log('../cun/cun?orgId=' + e.currentTarget.dataset.orgId)
+    console.log('../cun/cun?orgId=' + e.currentTarget.dataset.orgid)
     wx.navigateTo({
       url: '../cun/cun?orgId=' + e.currentTarget.dataset.orgid
     })

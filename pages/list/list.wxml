@@ -6,9 +6,9 @@
 </view>
 
 <view class='cons f14'>
-  <view class='cons_li box'>
-    <view class='title ellipsis' bindtap='goInfo'>啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的啊实打实的</view>
-    <view class='date'>2018-09-09</view>
+  <view class='cons_li box' wx:for="{{listData}}" wx:key="{{index}}">
+      <view class='title ellipsis' bindtap='goInfo' data-Id = '{{item.Id}}'>{{item.Title}}</view>
+      <view class='date'>{{item.CreateDate}}</view>
   </view>
 </view>
 

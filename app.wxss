@@ -16,6 +16,9 @@ page{background:#fafafa;font-size:14px;color:#000;line-height: 1.5;position: rel
 page{
   font-size: 12px;
 }
+.inline{
+  display: inline-block;
+}
 /*宽度*/
 .w{width:680rpx;margin:0 auto;overflow:hidden;}
 .full{width:100%;}
@@ -137,6 +140,10 @@ button[type="primary"][plain] {
   justify-content:center;
   -webkit-justify-content:center;
 }
+.align-item{
+  align-items:center;
+  -webkit-align-items:center;
+}
 .column{
   flex-direction: column;
 }
@@ -148,6 +155,9 @@ button[type="primary"][plain] {
 }
 .tcenter{
   text-align: center;
+}
+.justify-between{
+  justify-content: space-between;
 }
 
 .icon{
