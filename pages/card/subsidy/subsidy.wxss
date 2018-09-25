@@ -1,0 +1,117 @@
+/* pages/card/subsidy/subsidy.wxss */
+.subsidy{
+  color: #fff;
+  background: #f5f8fa;
+  font-size: 32rpx;
+}
+.subsidy .header{
+  height: 283rpx;
+  padding: 0 15px;
+  background: #fe3a35;
+}
+.subsidy .header .name_box{
+  padding-top: 30rpx;
+}
+.subsidy .header .name_box .name{
+  font-size: 46rpx;
+}
+.subsidy .header .name_box .card{
+  color: #270908;
+}
+.subsidy .header .edit_btn{
+  padding: 10rpx 30rpx;
+  line-height: 40rpx;
+  background: rgba(0, 0, 0, .3);
+  border-radius: 40rpx;
+}
+
+.subsidy .header .address{
+  background: rgba(0, 0, 0, .3);
+  line-height: 80rpx;
+  padding: 0 15px;
+  margin-top: 40rpx;
+}
+
+
+.subsidy .search{
+  padding: 0 30px;
+}
+.subsidy .search_box{
+  margin: 30rpx 40rpx;
+  background: #fe3a35;
+  line-height: 88rpx;
+  border-radius: 88rpx;
+}
+.subsidy .search_box text{
+  flex: 1;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  font-size: 34rpx;
+}
+.subsidy .search_box .search_input_box{
+  flex: 6;
+  height: 80rpx;
+  margin-top: 4rpx;
+  line-height: 86rpx;
+  background: #fff;
+  -webkit-border-top-left-radius:43rpx;
+  -webkit-border-bottom-left-radius:43rpx;
+  margin-left:4rpx;
+
+}
+.subsidy .search_box .search_input_box .input{
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 43rpx;
+}
+
+.subsidy .tab{
+  line-height: 60rpx;
+  background: #fff;
+  padding: 0 15px;
+  color: #000;
+}
+.subsidy .tab .tab_li{
+  margin-right: 10px;
+  padding: 5px 0;
+}
+.subsidy .tab .tab_li_active{
+  color: #fe3a35;
+  position: relative;
+}
+.subsidy .tab_li_active::after{
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background: #fe3a35;
+}
+
+.cons{
+  padding: 15px 0;
+  background: #fff;
+  color: #000;
+  font-size: 40rpx;
+  margin-top: 15px;
+}
+.cons .cons_tit{
+  line-height: 40rpx;
+  padding: 10px 15px;
+  border-bottom: 1px solid #f5f8fa;
+}
+.cons .br{
+  width: 3px;
+  height: 40rpx;
+  margin: 0 10px;
+  background: #dcdcdc;
+}
+.cons .money{
+  color: #ebc17c;
+}
+.cons_cons {
+  padding: 10px 15px 0;
+  color: #a5a5a5;
+}

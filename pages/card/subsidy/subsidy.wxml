@@ -1,0 +1,71 @@
+<!--pages/card/subsidy/subsidy.wxml-->
+<view class='subsidy'>
+  <view class='header'>
+    <view class='box justify-between align-item name_box'>
+      <view>
+        <text class='name'>李春福</text>
+        <text class='card'>（户主）</text>
+      </view>
+      <view class='edit_btn'>修改密码 ></view>
+    </view>
+
+    <view class='address'>行政划分：白音特拉乡白头山村 大白头山</view>
+  </view>
+
+  <view class='search_box box justify-between'>
+    <view class='search_input_box'>
+      <input type='text' placeholder='请输入补贴成员查询补贴信息' class='f16 input'></input>
+    </view>
+    <text>查询</text>
+  </view>
+
+  <view class='tab box'>
+    <view class='tab_li tab_li_active'>2018年</view>
+    <view class='tab_li'>2017年</view>
+  </view>
+
+  <view class='cons'>
+    <view class='cons_tit box justify-between'>
+      <view class='box'>
+        <text>李春福</text>
+        <view class='br'></view>
+        <text class='money'>￥1493.66</text>
+      </view>
+      <view>2018/06/11</view>
+    </view>
+    <view class='cons_cons'>
+      <view>补贴项目：耕地地力保护补贴</view>
+      <view>收款账号：**************9914</view>
+    </view>
+  </view>
+
+  <view class='cons'>
+    <view class='cons_tit box justify-between'>
+      <view class='box'>
+        <text>李春福</text>
+        <view class='br'></view>
+        <text class='money'>￥46.00</text>
+      </view>
+      <view>2018/02/02</view>
+    </view>
+    <view class='cons_cons'>
+      <view>补贴项目：退耕还林补贴补助</view>
+      <view>收款账号：**************9914</view>
+    </view>
+  </view>
+
+  <view class='cons'>
+    <view class='cons_tit box justify-between'>
+      <view class='box'>
+        <text>李春福</text>
+        <view class='br'></view>
+        <text class='money'>￥40.00</text>
+      </view>
+      <view>2018/02/02</view>
+    </view>
+    <view class='cons_cons'>
+      <view>补贴项目：退耕还林补贴补助</view>
+      <view>收款账号：**************9914</view>
+    </view>
+  </view>
+</view>
