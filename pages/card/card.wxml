@@ -21,17 +21,17 @@
       <view class='box card_form_li'>
         <image src='../../images/card.png' class='icon'></image>
         <text>身份证</text>
-        <input type='idcard' placeholder='请输入身份证号码' class='f16 input'></input>
+        <input type='idcard' placeholder='请输入身份证号码' class='f16 input' value="{{cardNum}}" bindinput="inputTyping"></input>
       </view>
-      <view class='box card_form_li'>
+      <!-- <view class='box card_form_li'>
         <image src='../../images/pass.png' class='icon'></image>
         <text>密 码</text>
         <input type='idcard' placeholder='请输入密码' class='f16 input'></input>
-      </view>
+      </view> -->
     </view>
 
     <view class='f16 login radius5' bindtap='goSubsidy'>登 陆</view>
 
-    <view class='forgetPass'>忘记密码</view>
+    <!-- <view class='forgetPass'>忘记密码</view> -->
   </view>
 </view>

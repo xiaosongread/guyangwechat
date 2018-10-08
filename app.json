@@ -9,8 +9,9 @@
     "pages/report/report",
     "pages/serarchReport/serarchReport",
     "pages/list/info/info",
-    "pages/card/subsidy/subsidy",
-    "pages/card/card"
+    "pages/card/card",
+    "pages/card/subsidy/subsidy"
+    
     
   ],
   "window": {

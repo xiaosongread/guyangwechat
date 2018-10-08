@@ -173,3 +173,7 @@ button[type="primary"][plain] {
 .radius5{
   border-radius: 5px;
 }
+.w90{
+  width: 90%;
+  text-align:center;
+}

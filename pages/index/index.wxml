@@ -41,7 +41,7 @@
           <view class="{{townList.length-1 != index ? 'classif_box_three' : 'classif_box_one'}} classif_box_item color5 radius5" bindtap="goVillage" data-twonid="{{item.OrganizeId}}">
             <view class='a box center column'>
               <image src='../../images/home.png' class='iconbig'></image>
-              <view>{{item.FullName}}</view>
+              <view class='ellipsis w90'>{{item.FullName}}</view>
             </view>
           </view> 
       </block>  
@@ -49,7 +49,7 @@
           <view class="{{townList.length-1 != index && townList.length-2 != index ? 'classif_box_three' : 'classif_box_two'}} classif_box_item color5 radius5" bindtap="goVillage" data-twonid="{{item.OrganizeId}}">
             <view class='a box center column'>
               <image src='../../images/home.png' class='iconbig'></image>
-              <view>{{item.FullName}}</view>
+              <view class='ellipsis w90'>{{item.FullName}}</view>
             </view>
           </view> 
       </block>  
@@ -57,7 +57,7 @@
           <view class='classif_box_three classif_box_item color5 radius5' bindtap="goVillage" data-twonid="{{item.OrganizeId}}">
             <view class='a box center column'>
               <image src='../../images/home.png' class='iconbig'></image>
-              <view>{{item.FullName}}</view>
+              <view class='ellipsis w90'>{{item.FullName}}</view>
             </view>
           </view> 
       </block>  
@@ -74,7 +74,7 @@
     <view class='danwei_item color5 radius5' bindtap='goUnit' data-id="{{item.OrganizeId}}">
       <view class='danwei_item_box box center column'>
         <image src='../../images/bumen.png' class='icon'></image>
-        <view class='danwei_box_tit'>{{item.FullName}}</view>
+        <view class='danwei_box_tit ellipsis w90'>{{item.FullName}}</view>
       </view>
     </view>
   </block>

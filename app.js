@@ -7,7 +7,9 @@ var app = App({
     unit: `${host}/api/Organization/GetCity?cityId=c2cd267b-6d49-4914-a35d-e22a42ad0b39`,
     cun: `${host}/api/Organization/GetCity`,
     list: `${host}/api/Swgk/GetPageListJson`,
-    listInfo: `${host}/api/Swgk/Get/`
+    listInfo: `${host}/api/Swgk/Get/`,
+    getCard: `${host}/api/Swgk/BuTieDetails`,
+    // getCard: `${host}/api/Swgk/Login`,
   },
   onLaunch: function () {
     

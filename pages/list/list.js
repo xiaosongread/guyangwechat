@@ -60,7 +60,7 @@ Page({
       url: app.api.listInfo + e.currentTarget.dataset.id,
       method: 'get',
       success: function (res) {
-        var url = 'http://39.106.121.203:8031/' + JSON.parse(res.data).resultdata;
+        var url = 'https://www.9zhouzhi.cn/' + JSON.parse(res.data).resultdata;
         wx.navigateTo({
           url: './info/info?url='+url
         })
@@ -103,6 +103,7 @@ Page({
     this.getData(this.data.inputVal);
   },
   inputTyping: function (e) {
+    console.log("输入",e)
     this.setData({
       inputVal: e.detail.value
     });

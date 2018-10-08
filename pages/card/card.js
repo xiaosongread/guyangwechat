@@ -1,11 +1,12 @@
 // pages/card/card.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    cardNum: ""
   },
 
   /**
@@ -35,10 +36,40 @@ Page({
   onHide: function () {
   
   },
+  inputTyping: function (e) {
+    console.log("输入", e)
+    this.setData({
+      cardNum: e.detail.value
+    });
+  },
+  search1Fn: function (e) {
+    // console.log("搜索事件", this.data.inputVal, e)
+    // this.getData(this.data.inputVal);
+  },
   goSubsidy: function(){
-    wx.navigateTo({
-      url: './subsidy/subsidy'
+    console.log("123123", this.data.cardNum)
+    var _self=this;
+    wx.request({
+      url: app.api.getCard,
+      method: 'post',
+      data: {
+        cardno: _self.data.cardNum,
+        type:1
+      },
+      success: function (res) {
+        // console.log("res", JSON.parse(res.data))
+        // _self.setData({
+        //   listData: JSON.parse(res.data).resultdata.rows
+        // })
+      },
+      complete: function () {
+        wx.hideToast();
+        wx.stopPullDownRefresh() //停止下拉刷新
+      }
     })
+    // wx.navigateTo({
+    //   url: './subsidy/subsidy'
+    // })
   },
   /**
    * 生命周期函数--监听页面卸载

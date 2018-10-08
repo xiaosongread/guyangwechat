@@ -27,8 +27,8 @@
     <view>财务公开</view>
     <image src='../../images/11.png' class='icon'></image>
   </view>
-  <view class='flex1 tcenter col_btn color4' bindtap='goMessage'>
+  <!-- <view class='flex1 tcenter col_btn color4' bindtap='goMessage'>
     <view>在线留言</view>
     <image src='../../images/11.png' class='icon' bindtap='goList'></image>
-  </view>
+  </view> -->
 </view>
