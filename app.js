@@ -8,8 +8,8 @@ var app = App({
     cun: `${host}/api/Organization/GetCity`,
     list: `${host}/api/Swgk/GetPageListJson`,
     listInfo: `${host}/api/Swgk/Get/`,
-    getCard: `${host}/api/Swgk/BuTieDetails`,
-    // getCard: `${host}/api/Swgk/Login`,
+    // getCard: `${host}/api/Swgk/BuTieDetails`,
+    getCard: `${host}/api/Swgk/Login`,
   },
   onLaunch: function () {
     

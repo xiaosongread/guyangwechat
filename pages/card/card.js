@@ -50,12 +50,11 @@ Page({
     console.log("123123", this.data.cardNum)
     var _self=this;
     wx.request({
-      url: app.api.getCard,
+      url: app.api.getCard + "?cardno=" + _self.data.cardNum,//152625197107203016
       method: 'post',
-      data: {
-        cardno: _self.data.cardNum,
-        type:1
-      },
+      // data: {
+      //   cardno: _self.data.cardNum
+      // },
       success: function (res) {
         // console.log("res", JSON.parse(res.data))
         // _self.setData({
