@@ -13,14 +13,14 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-  
+    
   },
 
   /**
@@ -47,23 +47,26 @@ Page({
     // this.getData(this.data.inputVal);
   },
   goSubsidy: function(){
-    console.log("123123", this.data.cardNum)
     var _self=this;
     wx.request({
-      url: app.api.getCard + "?cardno=" + _self.data.cardNum,//152625197107203016
+      url: app.api.cardLogin + "?cardno=" + _self.data.cardNum,//150302194002111530
       method: 'post',
-      // data: {
-      //   cardno: _self.data.cardNum
-      // },
       success: function (res) {
-        // console.log("res", JSON.parse(res.data))
+        console.log("card", JSON.parse(res.data))
+        var data = JSON.parse(res.data);
+        if(data.type == 1) {
+          wx.navigateTo({
+            url: './subsidy/subsidy?card=' + data.resultdata.cardno
+          })
+        } else {
+          wx.showToast({
+            title: data.message,
+            icon: "none"
+          })
+        }
         // _self.setData({
         //   listData: JSON.parse(res.data).resultdata.rows
         // })
-      },
-      complete: function () {
-        wx.hideToast();
-        wx.stopPullDownRefresh() //停止下拉刷新
       }
     })
     // wx.navigateTo({

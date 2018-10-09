@@ -1,18 +1,45 @@
 // pages/card/subsidy/subsidy.js
+var app = getApp();
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-  
+    cardno: "",
+    info:""
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    console.log("options1", options)
+    this.setData({
+      cardno: options.card
+    });
+    var _self = this;
+    wx.request({
+      url: app.api.getCard + "?cardno=" + _self.data.cardno+"&type=1",//150302194002111530
+      method: 'post',
+      success: function (res) {
+        console.log("1111", JSON.parse(res.data))
+        var data = JSON.parse(res.data);
+        if (data.type == 1) {
+          _self.setData({
+            info: data.resultdata
+          });
+        } else {
+          wx.showToast({
+            title: data.message,
+            icon: "none"
+          })
+        }
+        // _self.setData({
+        //   listData: JSON.parse(res.data).resultdata.rows
+        // })
+      }
+    })
   },
 
   /**
