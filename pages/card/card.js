@@ -47,7 +47,14 @@ Page({
     // this.getData(this.data.inputVal);
   },
   goSubsidy: function(){
-    var _self=this;
+    var _self = this;
+    if (this.data.cardNum == ""){
+      wx.showToast({
+        title: "身份证不能为空！",
+        icon: "none"
+      })
+      return;
+    }
     wx.request({
       url: app.api.cardLogin + "?cardno=" + _self.data.cardNum,//150302194002111530
       method: 'post',

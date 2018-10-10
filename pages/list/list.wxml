@@ -1,3 +1,4 @@
+<wxs module='filter' src='../../filter.wxs'></wxs>
 <view class="search box">
   <view class='input_box radius5 f14' bindtap='search' action="">
     <input type="text" placeholder="输入关键字" value="{{inputVal}}" bindconfirm='searchFn' bindinput="inputTyping"/>
@@ -8,7 +9,7 @@
 <view class='cons f14'>
   <view class='cons_li box' wx:for="{{listData}}" wx:key="{{index}}">
       <view class='title ellipsis' bindtap='goInfo' data-Id = '{{item.Id}}'>{{item.Title}}</view>
-      <view class='date'>{{item.CreateDate}}</view>
+      <view class='date'>{{filter.dateFormat(item.CreateDate)}}</view>
   </view>
 </view>
 

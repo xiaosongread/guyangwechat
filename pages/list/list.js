@@ -56,20 +56,24 @@ Page({
     })
   },
   goInfo: function (e) {
-    wx.request({
-      url: app.api.listInfo + e.currentTarget.dataset.id,
-      method: 'get',
-      success: function (res) {
-        var url = 'https://www.9zhouzhi.cn/' + JSON.parse(res.data).resultdata;
-        wx.navigateTo({
-          url: './info/info?url='+url
-        })
-      },
-      complete: function () {
-        wx.hideToast();
-        wx.stopPullDownRefresh() //停止下拉刷新
-      }
+    var url = 'https://www.9zhouzhi.cn/Home/details/' + e.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: './info/info?url=' + url
     })
+    // wx.request({
+    //   url: app.api.listInfo + e.currentTarget.dataset.id,
+    //   method: 'get',
+    //   success: function (res) {
+    //     var url = 'https://www.9zhouzhi.cn/Home/details/' + JSON.parse(res.data).resultdata;
+    //     wx.navigateTo({
+    //       url: './info/info?url='+url
+    //     })
+    //   },
+    //   complete: function () {
+    //     wx.hideToast();
+    //     wx.stopPullDownRefresh() //停止下拉刷新
+    //   }
+    // })
   },
   /**
    * 生命周期函数--监听页面显示

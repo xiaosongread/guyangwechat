@@ -1,0 +1,9 @@
+var dateFormat = function (date) {
+  console.log(1, date)
+  var dates = date.substring(0,10);
+  return dates;
+}
+
+module.exports = {
+  dateFormat: dateFormat
+}
