@@ -20,7 +20,8 @@ Page({
     category:"",
     orgId:'',
     type:0,
-    text: '村务公开'
+    text: '村务公开',
+    src:'../../images/cunw.png'
   },
 
   /**
@@ -34,7 +35,8 @@ Page({
     })
     if(options.type == 1) {
       this.setData({
-        text: "政务公开"
+        text: "政务公开",
+        src: "../../images/zw.png"
       })
     }
   },
