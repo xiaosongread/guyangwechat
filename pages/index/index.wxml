@@ -9,29 +9,6 @@
 </swiper>
 
 <view class='title box column'>
-  <view class='elesh f12'>Selection Column</view>
-  <view class='f16 bold'>选 择 栏 目</view>
-</view>
-<view class='column_box box'>
-  <view class='flex1 tcenter col_btn color1'>
-    <view>党务公开</view>
-    <image src='../../images/dw.png' class='icon'></image>
-  </view>
-  <view class='flex1 tcenter col_btn color2'>
-    <view>政务公开</view>
-    <image src='../../images/zw.png' class='icon'></image>
-  </view>
-  <view class='flex1 tcenter col_btn color3'>
-    <view>村务公开</view>
-    <image src='../../images/cunw.png' class='icon'></image>
-  </view>
-  <view class='flex1 tcenter col_btn color4'>
-    <view>财务公开</view>
-    <image src='../../images/cw.png' class='icon'></image>
-  </view>
-</view>
-
-<view class='title box column'>
   <view class='elesh f12'>Selection Classifcation</view>
   <view class='f16 bold'>选 择 镇 街道</view>
 </view>

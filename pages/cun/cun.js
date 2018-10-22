@@ -18,7 +18,9 @@ Page({
     duration: 1000,
 
     category:"",
-    orgId:''
+    orgId:'',
+    type:0,
+    text: '村务公开'
   },
 
   /**
@@ -30,6 +32,11 @@ Page({
     this.setData({
       orgId: options.orgId
     })
+    if(options.type == 1) {
+      this.setData({
+        text: "政务公开"
+      })
+    }
   },
 
   /**
