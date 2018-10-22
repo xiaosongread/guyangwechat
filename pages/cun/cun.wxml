@@ -18,7 +18,7 @@
     <image src='../../images/11.png' class='icon'></image>
   </view>
   <view class='flex1 tcenter col_btn color2' bindtap='goList' data-category="2">
-    <view>村务公开</view>
+    <view>{{text}}</view>
     <image src='../../images/11.png' class='icon'></image>
   </view>
 </view>

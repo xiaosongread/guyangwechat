@@ -85,7 +85,7 @@ Page({
   goUnit: function (e) {
     console.log(e)
     wx.navigateTo({
-      url: '../cun/cun?orgId=' + e.currentTarget.dataset.id
+      url: '../cun/cun?orgId=' + e.currentTarget.dataset.id + '&type=1' // 1 单位
     })
   },
   /**
