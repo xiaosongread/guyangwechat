@@ -15,15 +15,15 @@
 <view class='column_box box'>
   <view class='flex1 tcenter col_btn color1' bindtap='goList' data-category="1">
     <view>党务公开</view>
-    <image src='../../images/11.png' class='icon'></image>
+    <image src='../../images/dw.png' class='icon'></image>
   </view>
   <view class='flex1 tcenter col_btn color2' bindtap='goList' data-category="2">
     <view>政务公开</view>
-    <image src='../../images/11.png' class='icon'></image>
+    <image src='../../images/zw.png' class='icon'></image>
   </view>
-  <view class='flex1 tcenter col_btn color3' bindtap='goList' data-category="3">
+  <view class='flex1 tcenter col_btn color4' bindtap='goList' data-category="3">
     <view>财务公开</view>
-    <image src='../../images/11.png' class='icon'></image>
+    <image src='../../images/cw.png' class='icon'></image>
   </view>
   <!-- <view class='flex1 tcenter col_btn color4' bindtap='goMessage'>
     <view>在线留言</view>
