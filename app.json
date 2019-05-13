@@ -11,14 +11,12 @@
     "pages/list/info/info",
     "pages/card/card",
     "pages/card/subsidy/subsidy"
-    
-    
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#fe3a35",
     "navigationBarTitleText": "化德纪委监委",
-    "navigationBarTextStyle": "#fff"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#fff",

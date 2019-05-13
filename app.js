@@ -1,4 +1,7 @@
-const host = 'https://www.9zhouzhi.cn';
+// const host = 'https://www.9zhouzhi.cn';
+const host = 'https://www.hdswgk.com/';
+
+
 
 var app = App({
   // 接口地址
