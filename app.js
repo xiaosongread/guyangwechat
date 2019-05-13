@@ -4,6 +4,7 @@ const host = 'https://www.hdswgk.com/';
 
 
 var app = App({
+  host,
   // 接口地址
   api: {
     town: `${host}/api/Organization/GetCity?cityId=d8b952c4-b885-4ca2-a73c-99b99697211f`,
