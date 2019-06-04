@@ -18,7 +18,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log("22", options)
     this.setData({
       category: options.category,
       orgId: options.orgId
@@ -40,7 +39,7 @@ Page({
         orgId: _self.data.orgId,
         category: _self.data.category,
         pageindex:1,
-        pagesize:10,
+        pagesize:100,
         keyWords: keyWord || ''
       },
       success: function (res) {
